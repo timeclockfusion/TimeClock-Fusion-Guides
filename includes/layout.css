@@ -1,0 +1,688 @@
+/* 
+    Document   : layout
+    Created on : Jul 15, 2010, 2:34:53 PM
+    Author     : Jared
+    Description:
+        Main css
+*/
+
+root { 
+    display: block;
+}
+body{
+    background:url('images/Blue_Background_big_2048.png') repeat-x #0f1726;
+    font-family: 'Arial';
+    margin:0px;
+}
+th{
+    text-align: left;
+}
+td {
+    padding-left:3px;
+    padding-right:3px;
+}
+h2, h3, h4{
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:15px;
+}
+form{
+    margin-bottom:0px;
+    padding-bottom:14px;
+}
+.notice{
+    color:blue;
+}
+.success{
+    color:green;
+}
+.error{
+    color:red;
+}
+.rightFloat{
+    float:right;
+}
+.clr{
+    clear:both;
+}
+#wrapper{
+    width:1000px;
+    margin: 0px auto;
+}
+#header{
+    height:92px;
+    background:url('images/Top_Cap_1000.png') no-repeat left bottom;
+    text-align: center;
+    padding-right:30px;
+    width:1000px;
+}
+
+#body{
+   min-height:610px;
+   padding-left:20px;
+   padding-right:20px;
+   background:url('images/Main_Body_1000.png') repeat-y;
+/*    overflow:hidden;*/
+}
+#homeBody{
+   height:610px;
+   padding-left:20px;
+   background:url('images/Main_Body_1000.png') repeat-y;
+}
+#headerRight{
+    width:759px;
+    float:left;
+}
+#upperRight{
+    width:100%;
+    height:38px;
+    float:left;
+}
+#openSource{
+    float:right;
+    width:205px;
+    height:22px;
+    font-size:12px;
+    background:url('images/open_source.png') no-repeat;
+}
+#openSource a{
+    color:white;
+}
+#footer, #footerHome{
+    height:55px;
+    width:1000px;
+    background:url('images/Bottom_Cap_1000.png') no-repeat;
+    text-align:center;
+    color:#203f5a;
+}
+#footer{
+    padding-top:10px;
+}
+#footer a{
+    color:#2c4962;
+}
+#footerContainer, #homeFooterContainer{
+    background:transparent;
+    font-weight:bold;
+    font-size:13px;
+}
+#homeFooterContainer{
+    position:relative;
+    top:-23px;
+}
+#footerLeft{
+    margin-left:17px;
+    padding-top:20px;
+    width:335px;
+    float:left;
+}
+#footerMiddle{
+    width:330px;
+    float:left;
+    margin-left:10px;
+}
+#footerMiddle div{
+    background:url('images/Bottom_Divider.png') no-repeat left;
+    padding-top:12px;
+    height:28px;
+}
+#footerMidLeft{
+    width:125px;
+    float:left;
+}
+#footerMidMid{
+    width:107px;
+    float:left;
+}
+#footerMidRight{
+    width:86px;
+    float:left;
+}
+#footerRight{
+    width:290px;
+    float:left;
+    padding-top:3px;
+}
+#footerRight img{
+    padding-right:20px;
+}
+#footerRight img{
+    float:right;
+}
+
+/*
+ ***General*****
+*/
+.actionButton{
+    float:right;
+}
+
+#logo{
+    float:left;
+    width:241px;
+    height:70px;
+}
+
+div#topMenu{
+    margin-right:8px;
+    width:auto;
+    height:51px;
+    float:right;
+    overflow:hidden;
+/*    background-color: #253E53;*/
+}
+
+#navMenu img{
+    position:relative;
+    top:-7px;
+    padding:0px;
+    margin:0px;
+}
+#navMenu li{
+    height:40px;
+    float:left;
+}
+.beforeImg, .beforeImgHover, .afterImg, .afterImgHover{
+    display:none;
+}
+#navMenu .activeMain{
+    z-index:600;
+    background:url('images/tabs/Center.png') repeat-x !important;
+}
+#navMenu .activeMain a{
+    color:black !important;
+}
+.menuBefore{
+    width:50px;
+    height:21px;
+    overflow:hidden;
+}
+.menuBefore img{
+    display:none;
+}
+.menuAfter{
+    width:20px;
+    height:21px;
+    overflow:hidden;
+}
+.menuAfter img{
+    display:none;
+}
+.menuLast{
+    width:19px;
+    height:21px;
+}
+.menuLast img{
+    display:none;
+}
+div#homeLeft{
+    float:left;
+    width: 668px;
+}
+
+/* Start Home */
+div#homeRight{
+    float:left;
+    width: 302px;
+    height:600px;
+}
+#homeBanner{
+    width:652px;
+    height:262px;
+    margin-left:10px;
+}
+#homelowerLeft{
+    width:333px;
+    float:left;
+}
+/*#homeLowerLeft .ui-accordion-content{
+    padding:15px !important;
+}
+*/#homeLowerLeft .ui-accordion-content p{
+    margin-top:0px !important;
+}
+#homeFeatures{
+    width:313px;
+    height:139px;
+    padding-left:20px;
+}
+
+#homeFeatures p{
+    font-size:small;
+}
+#homeScreenshot{
+    width:333px;
+    height:199px;
+}
+
+#homeInfo{
+    width:335px;
+    float:left;
+    position:relative;
+    top:-15px;
+}
+#homeInfoTop{
+    width:335px;
+    height:36px;
+    background:url('images/home/info_top.png') no-repeat;
+}
+#homeInfoBody{
+    width:275px;
+    height:300px;
+    background:url('images/home/info.png') repeat-y;
+    padding:0px 30px;
+}
+#homeInfoBottom{
+    width:335px;
+    height:36px;
+    background:url('images/home/info_bottom.png') no-repeat;
+}
+#homeHE{
+    background:url('images/home/Human_Element.png') no-repeat;
+    width:302px;
+    height:321px;
+    float:left;
+    position:relative;
+    top:-19px;
+    color:white;
+    font-weight:bold;
+    font-size:12px;
+    text-align:center;
+    overflow:hidden;
+}
+#homeHE p{
+    padding:0px 30px;
+}
+#homeTourDemo{
+    background:url('images/home/tour_demo.png') no-repeat;
+    width:298px;
+    height:84px;
+    float:left;
+    color:white;
+    text-align:center;
+    position:relative;
+    top:-35px;
+}
+#homeTour{
+    width:129px;
+    height:40px;
+    float:left;
+    padding:22px 10px;
+}
+#homeTour:hover{
+    background:url('images/home/tour_hover.png');
+}
+#homeDemo{
+    width:129px;
+    height:40px;
+    float:left;
+    padding:22px 10px;
+}
+#homeDemo:hover{
+    background:url('images/home/demo_hover.png');
+}
+#homeDemo a{
+    color:white;
+    text-decoration: none;
+}
+#homeTrial{
+    background:url('images/home/trial.png') no-repeat;
+    width:278px;
+    height:27px;
+    float:left;
+    color:white;
+    text-align:center;
+    padding:28px 10px;
+    font-size:22px;
+    font-weight:bold;
+    position:relative;
+    top:-60px;
+}
+
+#homeTrial a{
+    color: white;
+    text-decoration: none;
+
+}
+#homeTrial:hover{
+    background:url('images/home/trial_hover.png');
+}
+#homeTestemonials{
+    float:left;
+    width:302px;
+    height:215px;
+    background:url('images/home/testimonials.png') no-repeat;
+    position:relative;
+    top:-75px;
+}
+#homeTestemonialsContent{
+    margin: 35px 40px 30px 55px;
+}
+h2.homeTestimonials{
+    text-align:center;
+    font-size:12px;
+    padding:0px;
+}
+.homeTestimonialsText{
+    font-size:10px;
+}
+/* End Home */
+
+/* Start Price */
+#priceLeft{
+    float:left;
+    width:729px;
+}
+#priceInfo{
+    height:132px;
+    width:729px;
+    background:url('images/price/top_banner.png') no-repeat;
+}
+
+#priceInfo h1{
+    color:white;
+    margin-top:0px;
+    margin-left:40px;
+    padding-top:25px;
+}
+
+#priceInfo p{
+    color:white;
+    padding-left:40px;
+}
+
+#leftInfoAboutTopCap{
+    width:729px;
+    height:143px;
+    background:url('images/about/about_topcap.png') no-repeat;
+}
+
+#leftInfosite_mapTopCap{
+    width:729px;
+    height:143px;
+    background:url('images/site_map/site_map_topcap.png') no-repeat;
+}
+
+#leftInfoprivacyTopCap{
+    width:729px;
+    height:143px;
+    background:url('images/privacy/privacy_topcap.png') no-repeat;
+}
+
+#leftInfotouTopCap{
+    width:729px;
+    height:143px;
+    background:url('images/tou/tou_topcap.png') no-repeat;
+}
+
+#leftInfoFeaturesTopCap{
+    width:729px;
+    height:143px;
+    background:url('images/features/features_topcap.png') no-repeat;
+}
+
+
+
+#leftInfoFeatures{
+    width:670px;
+    background:url('images/common/left_body_background.png') repeat-y;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#installNameAvailable{
+    background:url('images/whiteShade60.png');
+}
+#leftInfoFeaturesBottomCap{
+    width:729px;
+    height:50px;
+    background:url('images/common/left_bottomcap.png') no-repeat;
+}
+
+#leftInfoFAQTopCap{
+    width:729px;
+    height:143px;
+    background:url('images/faq/faq_topcap.png') no-repeat;
+}
+
+#leftInfoFAQ{
+    width:670px;
+    background:url('images/common/left_body_background.png') repeat-y;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#leftInfoFAQBottomCap{
+    width:729px;
+    height:50px;
+    background:url('images/common/left_bottomcap.png') no-repeat;
+}
+
+
+#leftInfo ul{
+    margin-top:0px;
+}
+
+#leftInfo p{
+    margin-top:0;
+    padding-top:25px;
+    margin-bottom:0px;
+}
+
+#priceMid{
+    color:white !important;
+    width:100%;
+    height:256px;
+    position:relative;
+    top:-3px;
+    background:url('images/price/calculator.png') no-repeat;
+}
+#priceCalc{
+    width:225px;
+    height:216px;
+    float:left;
+    padding:20px 20px 20px 120px;
+}
+#priceIncludes{
+    width:324px;
+    height:216px;
+    float:left;
+    padding:20px;
+}
+#priceEvaluation{
+    height:460px;
+    width:100%;
+    position:relative;
+    top:-7px;
+    background:url('images/price/Trial_Evaluation.png') no-repeat;
+    color: white;
+    margin-top:15px;
+}
+
+#priceIncludes ul li{
+    padding-top:5px;
+}
+
+
+
+#rightBar{
+    float:left;
+}
+
+#rightBarFeaturesTop{
+    width:231px;
+    height:555px;
+    background:url('images/features/rightbar.png') no-repeat;
+}
+
+#rightBarContactTop{
+    width:231px;
+    height:555px;
+    background:url('images/contact/rightbar.png') no-repeat;
+}
+
+#contactTopBox{
+    width:729px;
+    height:265px;
+    background:url('images/contact/contact_top_box.png') no-repeat;
+}
+
+#contactForm{
+    width:729px;
+    height:524px;
+    background:url('images/contact/contact_form.png') no-repeat;
+    padding-left:60px;
+    padding-top:15px;
+}
+
+#contactSupport{
+    width:729px;
+    height:229px;
+    background:url('images/contact/contact_support.png') no-repeat;
+}
+
+#ticketButton{
+    padding-left:470px;
+    padding-top:138px;
+}
+
+#ticketButton a img{
+    border: none;
+}
+
+#rightBarPriceTop{
+    width:231px;
+    height:555px;
+    background:url('images/price/rightbar.png') no-repeat;
+}
+
+#rightBarAboutTop{
+    width:231px;
+    height:555px;
+    background:url('images/about/rightbar.png') no-repeat;
+}
+
+#rightBarFAQTop{
+    width:231px;
+    height:555px;
+    background:url('images/faq/rightbar.png') no-repeat;
+}
+#rightBarBody{
+    width:231px;
+    background:url('images/common/rightbar_body.png') repeat-y;
+}
+
+#rightBarBottomCap{
+    background:url('images/common/rightbar_bottom.png') no-repeat;
+    width:231px;
+    height:54px;
+}
+
+#priceCalc td{
+    color:white;
+}
+p#priceIncludes{
+
+}
+#priceIncludes ul{
+    list-style-type:none;
+    padding-left:20px;
+}
+/* End Price */
+h2.sectionContent{
+    text-align:center;
+}
+div#body_header{
+    text-align:center;
+    padding-bottom: 10px;
+}
+
+.sectionContent{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.sectionLink{
+    margin-top: 325px;
+    text-align: center;
+}
+
+.sectionLinkLeft{
+    margin-top: 300px;
+    text-align: center;
+}
+
+.sectionLinkLeft a {
+    color: white;
+    text-decoration: none;
+}
+
+.sectionLink a {
+    color: white;
+    text-decoration: none;
+}
+
+.small {
+    font-size: x-small;
+}
+
+.productTable {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+#contactForm{
+    color:white;
+}
+#contactForm td{
+    padding:0px;
+    color:white;
+}
+#button1 a img, #button2 a img, #button3 a img{
+    border:none;
+}
+
+#button1 {
+    padding-left:36px;
+    padding-top:205px;
+    position:absolute;
+}
+#button2, #button3{
+    padding-left:36px;
+    position:absolute;
+}
+
+#try_now{
+    position:absolute;
+    padding-top:361px;
+    margin-left:-35px;
+}
+#try_now img{
+    border:none;
+}
+
+#button2{
+    padding-top:289px;
+}
+
+#button3 {
+    padding-top:373px;
+}
+
+img.online_demo, img.take_tour, img.try_now{
+    z-index:10;
+    position:absolute;
+}
+
+img.online_demo_hover, img.take_tour_hover, img.try_now_hover{
+    position:absolute;
+}
+
